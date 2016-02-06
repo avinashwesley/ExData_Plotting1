@@ -1,7 +1,6 @@
 # Plot 2
 # Read data
 #make sure the data file is in the same folder as the r source file
-setwd("C:/Users/h122459/Desktop/Research/Coursera/Course4PrinciplesOfAnalyticGraphics/Assignment1")
 initial = read.table("household_power_consumption.txt", nrows=10, sep=";",header=TRUE,na.strings="?")
 classes = sapply(initial,class)
 setAs("character","myDate", function(from) as.Date(from, format="%d/%m/%Y") )
